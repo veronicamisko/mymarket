@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Каталог</title>
     </head>
-    <body class="page">
+    <body class="page theme theme--dark">
         <header class="page__header page-header">
             <nav class="page-header__navigation main-navigation">
                 <a class="logo" href="index.html">
@@ -73,8 +73,28 @@
                     <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Все товары</a>
                 </li>
             </ul>
-            <section class="product-section">
-                <h1 class="product-section__title">Электроника</h1>
+            <section class="products-section">
+                <h1 class="products-section__title">Электроника</h1>
+                <div class="products-section__params">
+                  <p class="products-section__params-title">Сортировать:</p>
+                  <ul class="sort-params">
+                    <li class="sort-params__item">
+                      <a class="sort-params__value" href="#">По популярности</a>
+                    </li>
+                    <li class="sort-params__item">
+                      <a class="sort-params__value sort-params__value--desc" href="#">По цене</a>
+                    </li>
+                    <li class="sort-params__item">
+                      <a class="sort-params__value" href="#">По рейтингу</a>
+                    </li>
+                    <li class="sort-params__item">
+                      <a class="sort-params__value" href="#">По отзывам</a>
+                    </li>
+                    <li class="sort-params__item">
+                      <a class="sort-params__value" href="#">По новизне</a>
+                    </li>
+                  </ul>
+                </div>
                 <ul class="products-section__list products catalog">
                     <li class="catalog__item">
                         <section class="product-preview product-preview--discount" data-value="20">
@@ -530,6 +550,200 @@
                         </section>
                     </li>
                 </ul>
+                <section class="products-section__filters filters">
+                  <h2 class="filters__title">Фильтры</h2>
+                  <form class="filters__form filters-form" action="#" method="GET">
+                    <button class="filters-form__reset" type="reset">Очистить</button>
+                    <input class="filters-form__search input input--search" type="text" placeholder="Поиск по фильтрам" name="filters" id="filters">
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Цена</legend>
+                      <div class="filter-range">
+                        <div class="filter-range__input-interval">
+                          <label class="visually-hidden" for="filters-form-price-min">От</label>
+                          <input class="filter-range__input input" type="text" name="filters-form-price-min" id="filters-form-price-min" value="от 3 290">
+                          <label class="visually-hidden" for="filters-form-price-max">До</label>
+                          <input class="filter-range__input input" type="text" name="filters-form-price-max" id="filters-form-price-max" value="до 250 000">
+                        </div>
+                        <div class="filter-range__controls">
+                          <div class="filter-range__rail">
+                            <div class="filter-range__track"></div>
+                          </div>
+                          <button class="filter-range__handle filter-range__handle-min">
+                            <span class="visually-hidden">Установить минимальную стоимость</span>
+                          </button>
+                          <button class="filter-range__handle filter-range__handle-max">
+                            <span class="visually-hidden">Установить максимальную стоимость</span>
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Бренд</legend>
+                      <input class="filters-form__search input input--search" type="text" placeholder="Поиск" name="brand-search" id="brand-search">
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="asus" checked>
+                        <span class="checkbox__label">Asus</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="acer">
+                        <span class="checkbox__label">Acer</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="apple" checked>
+                        <span class="checkbox__label">Apple</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="samsung">
+                        <span class="checkbox__label">Samsung</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="xiaomi">
+                        <span class="checkbox__label">Xiaomi</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="lenovo">
+                        <span class="checkbox__label">Lenovo</span>
+                      </label>
+                      <label class="filters-form__option checkbox checkbox--disabled">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="hp" disabled>
+                        <span class="checkbox__label">HP</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="huawei">
+                        <span class="checkbox__label">Huawei</span>
+                      </label>
+                      <label class="filters-form__option checkbox checkbox--disabled">
+                        <input class="visually-hidden" type="checkbox" name="brand" value="dell" disabled>
+                        <span class="checkbox__label">Dell</span>
+                      </label>
+                      <a class="filters-form__link" href="#">Смотреть все</a>
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Способ доставки</legend>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="delivery" value="courier">
+                        <span class="radio-button__label">Доставка курьером</span>
+                      </label>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="delivery" value="pick-up">
+                        <span class="radio-button__label">Самовывоз</span>
+                      </label>
+                      <label class="filters-form__option radio-button radio-button--disabled">
+                        <input class="visually-hidden" type="radio" name="delivery" value="postamat" disabled>
+                        <span class="radio-button__label">Постамат</span>
+                      </label>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="delivery" value="delivery-any" checked>
+                        <span class="radio-button__label">Любой</span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="visually-hidden">Дополнительные параметры</legend>
+                      <label class="filters-form__item toggle">
+                        <span class="toggle__label">Товары со скидкой</span>
+                        <input class="visually-hidden" type="checkbox"  name="discount" id="discount">
+                        <span class="toggle__slider"></span>
+                      </label>
+                      <label class="filters-form__item toggle">
+                        <span class="toggle__label">Доступно в рассрочку</span>
+                        <input class="visually-hidden" type="checkbox" name="byinstallments" id="byinstallments" checked>
+                        <span class="toggle__slider"></span>
+                      </label>
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Наличие в магазине</legend>
+                      <input class="filters-form__search input input--search" type="text" placeholder="Адрес, метро, название" name="shop" id="shop">
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Продавец</legend>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="atech" checked>
+                        <span class="checkbox__label">Atech</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="bonnto">
+                        <span class="checkbox__label">Bonnto</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="cesar" checked>
+                        <span class="checkbox__label">Cesar</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="dnk">
+                        <span class="checkbox__label">DNK</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="emall">
+                        <span class="checkbox__label">Emall</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="faiser">
+                        <span class="checkbox__label">Faiser</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="greal" checked>
+                        <span class="checkbox__label">Greal</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="holly-land" checked>
+                        <span class="checkbox__label">Holly Land</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="market" checked>
+                        <span class="checkbox__label">Market</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="hiplace">
+                        <span class="checkbox__label">Hiplace</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="honey-moon">
+                        <span class="checkbox__label">Honey Moon</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="realplace">
+                        <span class="checkbox__label">Realplace</span>
+                      </label>
+                      <label class="filters-form__option checkbox">
+                        <input class="visually-hidden" type="checkbox" name="seller" id="reshop">
+                        <span class="checkbox__label">Reshop</span>
+                      </label>
+                      <a class="filters-form__link" href="#">Скрыть</a>
+                    </fieldset>
+                    <fieldset class="filters-form__fieldset">
+                      <legend class="filters-form__fieldset-caption">Рейтинг</legend>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="rating" value="3">
+                        <span class="radio-button__label">От
+                          <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 3 из 5">
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="rating" value="4">
+                        <span class="radio-button__label">От
+                          <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 4 из 5">
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                            <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                          </span>
+                        </span>
+                      </label>
+                      <label class="filters-form__option radio-button">
+                        <input class="visually-hidden" type="radio" name="rating" id="rating-any" checked>
+                        <span class="radio-button__label">Любой</span>
+                      </label>
+                      </fieldset>
+                    <button class="filters-form__button button button--additional" type="button">Все фильтры</button>
+                  </form>
+                </section>
                 <div class="products-section__navigation">
                     <ul class="pagination">
                       <li class="pagination__item">
