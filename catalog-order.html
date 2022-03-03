@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма заказа товара</title>
+  </head>
+  <body class="page">
+    <header class="page__header page-header">
+      <nav class="page-header__navigation main-navigation">
+        <a class="logo" href="index.html">
+          <svg class="logo__img" width="60" height="52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.858 30.588h3.299v-4.64c0-.695.418-1.12 1.1-1.12.68 0 1.123.425 1.123 1.12v4.64h3.156v-4.64c0-.695.418-1.12 1.1-1.12.68 0 1.123.425 1.123 1.12v4.64h3.3v-5.366c0-1.632-1.208-2.694-2.965-2.694-1.363 0-2.463.643-2.773 1.617h-.096c-.191-.974-1.22-1.616-2.51-1.616-1.273 0-2.247.621-2.63 1.616H3.99v-1.513H.858v7.956zM19.244 30.713c1.195 0 2.097-.353 2.653-1.244h.072v1.12h3.084v-5.45c0-1.471-1.608-2.61-4.232-2.61-2.743 0-4.094 1.243-4.207 2.693h3.036c.078-.492.496-.725 1.123-.725.574 0 .98.228.98.642v.02c0 .462-.585.607-2.127.705-1.895.12-3.37.782-3.37 2.528 0 1.585 1.23 2.32 2.988 2.32zm1.075-1.803c-.562 0-.956-.238-.956-.684 0-.409.335-.725 1.1-.828.526-.073.968-.166 1.315-.29v.662c0 .726-.712 1.14-1.459 1.14zM26.63 30.588h3.298v-4.144c0-.911.723-1.512 1.698-1.512.34 0 .89.047 1.219.145v-2.44a3.412 3.412 0 00-.837-.108c-.98 0-1.745.497-2.08 1.616h-.095v-1.513h-3.204v7.956zM33.927 30.588h3.299V28.33l.496-.544 1.87 2.802h3.778l-3.216-4.47 3.12-3.486H39.57l-2.224 2.673h-.12V19.98h-3.298v10.608zM48.154 30.733c2.546 0 4.184-1.056 4.495-2.714h-3.013c-.19.45-.735.705-1.41.705-.98 0-1.554-.56-1.554-1.326v-.125h5.977v-.663c0-2.533-1.793-4.081-4.566-4.081-2.845 0-4.662 1.636-4.662 4.102 0 2.574 1.793 4.102 4.733 4.102zm-1.482-5.035c.018-.688.675-1.16 1.482-1.16.819 0 1.44.477 1.458 1.16h-2.94zM59.47 22.632h-1.578v-1.906h-3.3v1.906h-1.17v2.072h1.17v3.595c-.023 1.668 1.166 2.512 3.443 2.403a7.683 7.683 0 001.602-.248l-.478-2.01a4.036 4.036 0 01-.646.083c-.43 0-.621-.166-.621-.498v-3.325h1.578v-2.072zM0 12.235C0 5.478 6.32 0 14.118 0h14.117v18.353H0v-6.118zM60 18.353H31.765V0H60v18.353zM31.765 33.647H60v6.118C60 46.522 53.68 52 45.882 52H31.765V33.647zM0 33.647h28.235V52H0V33.647z"/></svg>
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="#">Электроника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Музыка и видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Цифровые товары</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Игры и консоли</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--accent" href="#">Акции</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link profile-link" href="#">
+              <svg class="user-navigation-item__img" width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 19v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M13 5a4 4 0 11-8 0 4 4 0 018 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="profile-link__caption">Валерия</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <svg class="user-navigation-item__img" width="17" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notification-badge__counter">3</span>
+              <span class="user-navigation-item__caption">Сравнение</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link" href="#">
+              <svg class="user-navigation-item__img" width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.38 2.591a5.533 5.533 0 00-1.792-1.177 5.61 5.61 0 00-4.23 0c-.671.273-1.28.673-1.793 1.177L11.5 3.638 10.435 2.59a5.576 5.576 0 00-3.908-1.59 5.576 5.576 0 00-3.908 1.59A5.384 5.384 0 001 6.431c0 1.441.582 2.823 1.619 3.841L11.499 19l8.882-8.728a5.423 5.423 0 001.198-1.762 5.348 5.348 0 000-4.157 5.423 5.423 0 00-1.198-1.762z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption"></span>
+              <span class="user-navigation-item__caption">Избранное</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <svg class="user-navigation-item__img" width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6m15 15a1 1 0 11-2 0 1 1 0 012 0zm-11 0a1 1 0 11-2 0 1 1 0 012 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notification-badge__counter">2</span>
+              <span class="user-navigation-item__caption">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__content page-content">
+      <a class="page-content__headline backward-link link" href="#">
+        <svg class="backward-link__img" viewbox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25 7H1m0 0l5.783 6M1 7l5.783-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="backward-link__caption">Назад к корзине</span>
+      </a>
+      <section class="page-content__checkout checkout">
+        <h1 class="checkout__title">Оформление заказа</h1>
+        <ul class="checkout__progress progress">
+          <li class="progress__item progress__item--active" data-value="section-1">Контактные данные</li>
+          <li class="progress__item" data-value="section-2">Способ получения</li>
+          <li class="progress__item" data-value="section-3">Дополнительные услуги</li>
+          <li class="progress__item" data-value="section-4">Подтверждение и оплата</li>
+        </ul>
+        <section class="checkout-section checkout-section--active" id="section-1">
+          <h2 class="checkout-section__title">Контактные данные</h2>
+          <form class="checkout-form" action="#" method="POST">
+            <p class="checkout-form__title">Получатель</p>
+            <div class="column-layout">
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Имя</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-name" id="checkout-form-recipient-name" placeholder="Иван">
+              </label>
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Фамилия</span>
+                <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-surname" id="order-recipient-surname" placeholder="Сидоров">
+              </label>
+              <label class="checkout-form__field checkout-form__field--required">
+                <span class="checkout-form__field-label">Телефон</span>
+                <input class="checkout-form__field-control input" type="tel" name="checkout-form-recipient-phone" id="order-recipient-phone" placeholder="+7(950)900-12-23">
+              </label>
+              <label class="checkout-form__field">
+                <span class="checkout-form__field-label">E-mail</span>
+                <input class="checkout-form__field-control input" type="email" name="checkout-form-recipient-email" id="order-recipient-email" placeholder="box@mail.ru">
+              </label>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-2">Далее</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-section" id="section-2">
+          <h2 class="checkout-section__title">Способ получения</h2>
+          <form class="checkout-form" action="#" method="POST">
+            <div class="tabs tabs--light">
+              <ul class="tabs__navigation">
+                <li class="tabs__navigation-item">
+                  <a class="tabs__navigation-link tabs__navigation-link--active" href="#page-1">Самовывоз</a>
+                </li>
+                <li class="tabs__navigation-item">
+                  <a class="tabs__navigation-link" href="#page-2">Доставка</a>
+                </li>
+              </ul>
+              <div class="tabs__pages">
+                <div class="tabs__pages-item tabs__pages-item--active" id="page-1">
+                  <div class="pick-up-points">
+                    <div class="pick-up-points__headline">
+                      <span class="pick-up-points__cell">Пункт выдачи</span>
+                      <span class="pick-up-points__cell">Дата доставки</span>
+                      <span class="pick-up-points__cell">Режим работы</span>
+                    </div>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-1">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТЦ «Омский»</b><br>Омск, ул. Ленина, 14</span>
+                        <span class="pick-up-points__cell">30 августа, (пн)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-2">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Каскад»</b><br>Омск, ул. Карла Маркса, 10</span>
+                        <span class="pick-up-points__cell">31 августа, (вт)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-3">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Континент»</b><br>Омск, ул. 70 лет Октября, 7</span>
+                        <span class="pick-up-points__cell">1 сентября, (ср)</span>
+                        <span class="pick-up-points__cell">10:00 - 21:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-4">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Флагман»</b><br>Омск, ул. Герцена, 24</span>
+                        <span class="pick-up-points__cell">2 сентября, (чт)</span>
+                        <span class="pick-up-points__cell">10:00 - 20:00</span>
+                      </span>
+                    </label>
+                    <label class="pick-up-points__row radio-button">
+                      <input class="visually-hidden" type="radio" name="pickup-point" value="pickup-point-5">
+                      <span class="pick-up-points__caption radio-button__label">
+                        <span class="pick-up-points__cell"><b>ТК «Метромол»</b><br>Омск, ул. Комарова, 1/2</span>
+                        <span class="pick-up-points__cell">3 сентября, (пт)</span>
+                        <span class="pick-up-points__cell">10:00 - 22:00</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="tabs__pages-item" id="page-2">
+                  <label class="checkout-form__field checkout-form__field--required">
+                    <span class="checkout-form__field-label">Адрес доставки</span>
+                    <input class="checkout-form__field-control input" type="text" name="address" id="address" placeholder="">
+                  </label>
+                  <label class="checkout-form__field">
+                    <span class="checkout-form__field-label">Время доставки</span>
+                    <select class="checkout-form__field-control select" name="time" id="time">
+                      <option>09:00-12:00</option>
+                      <option>12:00-18:00</option>
+                      <option>18:00-22:00</option>
+                    </select>
+                  </label>
+                  <label class="checkout-form__field checkout-form__field--required">
+                    <span class="checkout-form__field-label">Комментарий</span>
+                    <textarea class="checkout-form__field-control textarea" name="comment" id="comment" placeholder=""></textarea>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--secondary" type="button" data-target="section-1">Назад</button>
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-3">Далее</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-section" id="section-3">
+          <h2 class="checkout-section__title">Дополнительные услуги</h2>
+          <form class="checkout-form" action="#" method="POST">
+            <div class="tariff-plans">
+              <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-standart" aria-describedby="tariff-plan-standart">
+              <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-complex" aria-describedby="tariff-plan-complex">
+              <input class="visually-hidden" type="radio" name="tariff-plan" value="tariff-plan-full" aria-describedby="tariff-plan-full" checked>
+              <section class="tariff-plan" id="tariff-plan-standart" tabindex="0">
+                <h3 class="tariff-plan__title">«Стандартная страховка»</h3>
+                <p class="tariff-plan__price">1 290 ₽</p>
+                <p class="tariff-plan__description">Обезопасит от финансовых затрат при утрате или повреждении покупки</p>
+                <p class="tariff-plan__options-title">Защищает от:</p>
+                <ul class="tariff-plan__options">
+                  <li class="tariff-plan__option">Воздействия жидкости</li>
+                  <li class="tariff-plan__option">Стихийных бедствий</li>
+                  <li class="tariff-plan__option">Внешних механических воздействий</li>
+                </ul>
+              </section>
+              <section class="tariff-plan tariff-plan--hit" id="tariff-plan-complex" tabindex="0">
+                <h3 class="tariff-plan__title">«Комплексная защита»</h3>
+                <p class="tariff-plan__price">2 490 ₽</p>
+                <p class="tariff-plan__description">«Стандартная страховка» плюс расширенный срок заводской гарантии до 2 лет</p>
+                <p class="tariff-plan__options-title">Защищает от:</p>
+                <ul class="tariff-plan__options">
+                  <li class="tariff-plan__option">Воздействия электротока</li>
+                  <li class="tariff-plan__option">Кражи, хулиганства</li>
+                  <li class="tariff-plan__option">Поломок в рамках гарантии</li>
+                </ul>
+              </section>
+              <section class="tariff-plan tariff-plan--active" id="tariff-plan-full" tabindex="0">
+                <h3 class="tariff-plan__title">«Полная защита»</h3>
+                <p class="tariff-plan__price">5 690 ₽</p>
+                <p class="tariff-plan__description">«Комплексная защита» плюс ремонт поломок, не являющихся гарантийным случаем на 2 года</p>
+                <p class="tariff-plan__options-title">Защищает от:</p>
+                <ul class="tariff-plan__options">
+                  <li class="tariff-plan__option">Не гарантийных случаев</li>
+                  <li class="tariff-plan__option">Разбитого экрана</li>
+                  <li class="tariff-plan__option">Воздействия в результате ДТП</li>
+                </ul>
+              </section>
+            </div>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--additional" type="button" data-target="section-2">Назад</button>
+              <button class="checkout-form__button button button--primary" type="submit" data-target="section-4">Далее</button>
+            </div>
+          </form>
+        </section>
+        <section class="checkout-section" id="section-4">
+          <h2 class="checkout-section__title">Подтверждение и оплата</h2>
+          <form class="checkout-form" action="#" method="POST">
+            <p class="checkout-form__section-description">Выберите способ оплаты</p>
+            <div class="payment-methods">
+              <input class="visually-hidden" type="radio" name="payment-method" value="payment-method-cash" aria-describedby="payment-method-cash" checked>
+              <input class="visually-hidden" type="radio" name="payment-method" value="payment-method-online" aria-describedby="payment-method-online">
+              <section class="payment-method payment-method--active" id="payment-method-cash" tabindex="0">
+                <h3 class="payment-method__title">Оплата при получении</h3>
+                <p class="payment-method__content">Рекомендуем оплатить онлайн или бесконтактно. Бесконтактная оплата возможна с доставкой в радиусе 10 км.</p>
+              </section>
+              <section class="payment-method" id="payment-method-online" tabindex="0">
+                <h3 class="payment-method__title">Оплатить онлайн</h3>
+                <div class="payment-method__content payment">
+                  <ul class="payment__list">
+                    <li class="payment__item">
+                      <img src="img/visa.svg" width="34" height="24" alt="visa">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/mastercard.svg" width="34" height="24" alt="mastercard">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/applepay.svg" width="34" height="24" alt="apple-pay">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/googlepay.svg" width="34" height="24" alt="google-pay">
+                    </li>
+                    <li class="payment__item">
+                      <img src="img/yandex.svg" width="34" height="24" alt="yandex">
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <p class="checkout-form__description">
+              <label class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="sms" id="sms" checked>
+                <span class="checkbox__label">Прислать SMS с номером заказа на телефон получателя</span>
+              </label>
+            </p>
+            <p class="checkout-form__description">
+              <label class="checkbox">
+                <input class="visually-hidden" type="checkbox" name="policy" id="policy">
+                <span class="checkbox__label">Я даю разрешение ООО «Маркет», в целях заключения и исполнения договора купли-продажи, обрабатывать, хранить, передавать мои персональные данные: фамилию, имя, номера домашнего и мобильного телефонов, адрес электронной почты.</span>
+              </label>
+            </p>
+            <div class="checkout-form__controls">
+              <button class="checkout-form__button button button--additional" type="button" data-target="section-3">Назад</button>
+              <button class="checkout-form__submit-buttom button button--primary button--disabled" type="submit" disabled id="pay">Оформить заказ</button>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="page-content__cart cart-preview">
+        <h2 class="cart-preview__title">Ваш заказ</h2>
+        <div class="cart-preview__headline">
+          <p class="cart-preview__headline-caption">Товары</p>
+          <p class="cart-preview__headline-caption">2 позиции</p>
+        </div>
+        <ul class="cart-preview__products">
+          <li class="cart-preview__product">
+            <img class="cart-preview__product-img" src="img/cart-photo-1.png" width="80" height="60" alt="">
+            <p class="cart-preview__product-name">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</p>
+            <p class="cart-preview__product-sum">149 000 ₽</p>
+          </li>
+          <li class="cart-preview__product">
+            <img class="cart-preview__product-img" src="img/cart-photo-2.png" width="80" height="60" alt="">
+            <p class="cart-preview__product-name">Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)</p>
+            <p class="cart-preview__product-sum">2 800 ₽</p>
+          </li>
+        </ul>
+        <div class="cart-preview__headline">
+          <p class="cart-preview__headline-caption">Услуги</p>
+          <p class="cart-preview__headline-caption">1 позиция</p>
+        </div>
+        <ul class="cart-preview__services">
+          <li class="cart-preview__service">
+            <p class="cart-preview__service-name">Страховка «Полная защита»</p>
+            <p class="cart-preview__service-sum">5 690 ₽</p>
+          </li>
+        </ul>
+        <div class="cart-preview__total">
+          <p class="cart-preview__total-caption">Итого</p>
+          <p class="cart-preview__total-sum">12 460 ₽</p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer page-footer page-footer--compact">
+      <p class="page-footer__copyright">OOO «Маркет» © 2021 Все права защищены</p>
+      <a class="page-footer__policy" href="#">Политика конфиденциальности</a>
+    </footer>
+  </body>
+</html>
