@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Каталог</title>
+  </head>
+  <body class="page theme theme--dark">
+    <header class="page__header page-header">
+      <nav class="page-header__navigation main-navigation">
+        <a class="logo" href="index.html">
+          <svg class="logo__img" width="60" height="52" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.858 30.588h3.299v-4.64c0-.695.418-1.12 1.1-1.12.68 0 1.123.425 1.123 1.12v4.64h3.156v-4.64c0-.695.418-1.12 1.1-1.12.68 0 1.123.425 1.123 1.12v4.64h3.3v-5.366c0-1.632-1.208-2.694-2.965-2.694-1.363 0-2.463.643-2.773 1.617h-.096c-.191-.974-1.22-1.616-2.51-1.616-1.273 0-2.247.621-2.63 1.616H3.99v-1.513H.858v7.956zM19.244 30.713c1.195 0 2.097-.353 2.653-1.244h.072v1.12h3.084v-5.45c0-1.471-1.608-2.61-4.232-2.61-2.743 0-4.094 1.243-4.207 2.693h3.036c.078-.492.496-.725 1.123-.725.574 0 .98.228.98.642v.02c0 .462-.585.607-2.127.705-1.895.12-3.37.782-3.37 2.528 0 1.585 1.23 2.32 2.988 2.32zm1.075-1.803c-.562 0-.956-.238-.956-.684 0-.409.335-.725 1.1-.828.526-.073.968-.166 1.315-.29v.662c0 .726-.712 1.14-1.459 1.14zM26.63 30.588h3.298v-4.144c0-.911.723-1.512 1.698-1.512.34 0 .89.047 1.219.145v-2.44a3.412 3.412 0 00-.837-.108c-.98 0-1.745.497-2.08 1.616h-.095v-1.513h-3.204v7.956zM33.927 30.588h3.299V28.33l.496-.544 1.87 2.802h3.778l-3.216-4.47 3.12-3.486H39.57l-2.224 2.673h-.12V19.98h-3.298v10.608zM48.154 30.733c2.546 0 4.184-1.056 4.495-2.714h-3.013c-.19.45-.735.705-1.41.705-.98 0-1.554-.56-1.554-1.326v-.125h5.977v-.663c0-2.533-1.793-4.081-4.566-4.081-2.845 0-4.662 1.636-4.662 4.102 0 2.574 1.793 4.102 4.733 4.102zm-1.482-5.035c.018-.688.675-1.16 1.482-1.16.819 0 1.44.477 1.458 1.16h-2.94zM59.47 22.632h-1.578v-1.906h-3.3v1.906h-1.17v2.072h1.17v3.595c-.023 1.668 1.166 2.512 3.443 2.403a7.683 7.683 0 001.602-.248l-.478-2.01a4.036 4.036 0 01-.646.083c-.43 0-.621-.166-.621-.498v-3.325h1.578v-2.072zM0 12.235C0 5.478 6.32 0 14.118 0h14.117v18.353H0v-6.118zM60 18.353H31.765V0H60v18.353zM31.765 33.647H60v6.118C60 46.522 53.68 52 45.882 52H31.765V33.647zM0 33.647h28.235V52H0V33.647z"/></svg>
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="#">Электроника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Музыка и видео</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Цифровые товары</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Игры и консоли</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--accent" href="#">Акции</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link profile-link" href="#">
+              <svg class="user-navigation-item__img" width="18" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 19v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M13 5a4 4 0 11-8 0 4 4 0 018 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="profile-link__caption">Валерия</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <svg class="user-navigation-item__img" width="17" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notification-badge__counter">3</span>
+              <span class="user-navigation-item__caption">Сравнение</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link" href="#">
+              <svg class="user-navigation-item__img" width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.38 2.591a5.533 5.533 0 00-1.792-1.177 5.61 5.61 0 00-4.23 0c-.671.273-1.28.673-1.793 1.177L11.5 3.638 10.435 2.59a5.576 5.576 0 00-3.908-1.59 5.576 5.576 0 00-3.908 1.59A5.384 5.384 0 001 6.431c0 1.441.582 2.823 1.619 3.841L11.499 19l8.882-8.728a5.423 5.423 0 001.198-1.762 5.348 5.348 0 000-4.157 5.423 5.423 0 00-1.198-1.762z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption"></span>
+              <span class="user-navigation-item__caption">Избранное</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="order.html">
+              <svg class="user-navigation-item__img" width="24" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6m15 15a1 1 0 11-2 0 1 1 0 012 0zm-11 0a1 1 0 11-2 0 1 1 0 012 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="user-navigation-item__caption notification-badge__counter">2</span>
+              <span class="user-navigation-item__caption">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__content">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Электроника</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Все товары</a>
+        </li>
+      </ul>
+      <section class="products-section">
+        <h1 class="products-section__title">Электроника</h1>
+        <div class="products-section__params">
+          <p class="products-section__params-title">Сортировать:</p>
+          <ul class="sort-params">
+            <li class="sort-params__item">
+              <a class="sort-params__value" href="#">По популярности</a>
+            </li>
+            <li class="sort-params__item">
+              <a class="sort-params__value sort-params__value--desc" href="#">По цене</a>
+            </li>
+            <li class="sort-params__item">
+              <a class="sort-params__value" href="#">По рейтингу</a>
+            </li>
+            <li class="sort-params__item">
+              <a class="sort-params__value" href="#">По отзывам</a>
+            </li>
+            <li class="sort-params__item">
+              <a class="sort-params__value" href="#">По новизне</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="products-section__list products catalog">
+          <li class="catalog__item">
+            <section class="product-preview product-preview--instalment" data-value="0-0-24">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD </a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-2.png" width="280" height="300" alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD ">
+              <p class="product-preview__price">239 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">32 отзыва</a>
+              <p class="product-preview__info">Бесплатная доставка 2 года гарантии</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">OLED телевизор 4K Ultra HD Sony KD-55AG9</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-11.png" width="280" height="300" alt="OLED телевизор 4K Ultra HD Sony KD-55AG9">
+              <p class="product-preview__price">178 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">5 отзывов</a>
+              <p class="product-preview__info">Доставка по всему миру 1 год гарантии</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--instalment" data-value="0-0-24">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-13.png" width="280" height="300" alt="Моноблок Apple iMac 24 M1/8/256 Purple (MGPM3RU/A)">
+              <p class="product-preview__price">149 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">24 отзыва</a>
+              <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button button--secondary" type="button">Добавлено</button>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--instalment" data-value="0-0-24">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-8.png" width="280" height="300" alt="Моноблок Apple iMac 24 M1/8/256 Yellow (MGPM3RU/A)">
+              <p class="product-preview__price">149 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 5 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">5</span>
+              </div>
+              <a class="product-preview__reviews" href="#">12 отзывов</a>
+              <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--discount" data-value="20">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-4.png" width="280" height="300" alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)">
+              <p class="product-preview__price">95 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">5 отзывов</a>
+              <p class="product-preview__info">Доставка по всему миру</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-1.png" width="280" height="300" alt="Смартфон Apple iPhone 12 Pro 128GB Pacific Blue (MGMN3RU/A)">
+              <p class="product-preview__price">95 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">5 отзывов</a>
+              <p class="product-preview__info">Бесплатная доставка</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--hit">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-14.png" width="280" height="300" alt="Смартфон Huawei Mate Xs Interstellar Blue (TAH-N29M)">
+              <p class="product-preview__price">85 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">12 отзывов</a>
+              <p class="product-preview__info">Доставка по всему миру 1 год гарантии</p>
+                <div class="product-preview__controls">
+                  <button class="product-preview__button button" type="button">В корзину</button>
+                  <a class="product-preview__button image-button" href="#">
+                    <span class="visually-hidden">Добавить в избранное</span>
+                    <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a class="product-preview__button image-button image-button--active" href="#">
+                    <span class="visually-hidden">Добавить в сравнение</span>
+                    <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-6.png" width="280" height="300" alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)">
+              <p class="product-preview__price">72 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">22 отзыва</a>
+              <p class="product-preview__info">Бесплатная доставка</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--out-of-stock">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Планшет Apple iPad Air (2020) 256GB White (MYFT2RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-3.png" width="280" height="300" alt="Планшет Apple iPad Air (2020) 256GB White (MYFT2RU/A)">
+              <p class="product-preview__price">69 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">14 отзывов</a>
+              <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button button--disabled" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">LED Телевизор Full HD LG 43LP50006LA</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-12.png" width="280" height="300" alt="LED Телевизор Full HD LG 43LP50006LA">
+              <p>США</p>
+              <p class="product-preview__price">45 990 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">26 отзывов</a>
+              <p class="product-preview__info">Бесплатная доставка 3 года бесплатного обслуживания</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-9.png" width="280" height="300" alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)">
+              <p class="product-preview__price">25 000 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">42 отзыва</a>
+              <p class="product-preview__info">Бесплатная доставка Расширенная гарантия AppleCare</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--hit">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-7.png" width="280" height="300" alt="Смарт браслет Samsung Galaxy Fit 2 White (SM-R220NZKACIS)">
+              <p class="product-preview__price">2 800 ₽</p>
+              <div class="product-preview__rating rating" aria-label="Рейтинг 4 из 5">
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                <span class="rating__value">4</span>
+              </div>
+              <a class="product-preview__reviews" href="#">164 отзыва</a>
+              <p class="product-preview__info">Бесплатная доставка</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+        </ul>
+        <section class="products-section__filters filters">
+          <h2 class="filters__title">Фильтры</h2>
+          <form class="filters__form filters-form" action="#" method="GET">
+            <button class="filters-form__reset" type="reset">Очистить</button>
+            <input class="filters-form__search input input--search" type="text" placeholder="Поиск по фильтрам" name="filters" id="filters">
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Цена</legend>
+              <div class="filter-range">
+                <div class="filter-range__input-interval">
+                  <label class="visually-hidden" for="filters-form-price-min">От</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-price-min" id="filters-form-price-min" value="от 3 290">
+                  <label class="visually-hidden" for="filters-form-price-max">До</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-price-max" id="filters-form-price-max" value="до 250 000">
+                </div>
+                <div class="filter-range__controls">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+                  <button class="filter-range__handle filter-range__handle-min">
+                    <span class="visually-hidden">Установить минимальную стоимость</span>
+                  </button>
+                  <button class="filter-range__handle filter-range__handle-max">
+                    <span class="visually-hidden">Установить максимальную стоимость</span>
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Бренд</legend>
+              <input class="filters-form__search input input--search" type="text" placeholder="Поиск" name="brand-search" id="brand-search">
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="asus" checked>
+                <span class="checkbox__label">Asus</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="acer">
+                <span class="checkbox__label">Acer</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="apple" checked>
+                <span class="checkbox__label">Apple</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="samsung">
+                <span class="checkbox__label">Samsung</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="xiaomi">
+                <span class="checkbox__label">Xiaomi</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="lenovo">
+                <span class="checkbox__label">Lenovo</span>
+              </label>
+              <label class="filters-form__option checkbox checkbox--disabled">
+                <input class="visually-hidden" type="checkbox" name="brand" value="hp" disabled>
+                <span class="checkbox__label">HP</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="brand" value="huawei">
+                <span class="checkbox__label">Huawei</span>
+              </label>
+              <label class="filters-form__option checkbox checkbox--disabled">
+                <input class="visually-hidden" type="checkbox" name="brand" value="dell" disabled>
+                <span class="checkbox__label">Dell</span>
+              </label>
+              <a class="filters-form__link" href="#">Смотреть все</a>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Способ доставки</legend>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="delivery" value="courier">
+                <span class="radio-button__label">Доставка курьером</span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="delivery" value="pick-up">
+                <span class="radio-button__label">Самовывоз</span>
+              </label>
+              <label class="filters-form__option radio-button radio-button--disabled">
+                <input class="visually-hidden" type="radio" name="delivery" value="postamat" disabled>
+                <span class="radio-button__label">Постамат</span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="delivery" value="delivery-any" checked>
+                <span class="radio-button__label">Любой</span>
+              </label>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="visually-hidden">Дополнительные параметры</legend>
+              <label class="filters-form__item toggle">
+                <span class="toggle__label">Товары со скидкой</span>
+                <input class="visually-hidden" type="checkbox"  name="discount" id="discount">
+                <span class="toggle__slider"></span>
+              </label>
+              <label class="filters-form__item toggle">
+                <span class="toggle__label">Доступно в рассрочку</span>
+                <input class="visually-hidden" type="checkbox" name="byinstallments" id="byinstallments" checked>
+                <span class="toggle__slider"></span>
+              </label>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Наличие в магазине</legend>
+              <input class="filters-form__search input input--search" type="text" placeholder="Адрес, метро, название" name="shop" id="shop">
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Продавец</legend>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="atech" checked>
+                <span class="checkbox__label">Atech</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="bonnto">
+                <span class="checkbox__label">Bonnto</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="cesar" checked>
+                <span class="checkbox__label">Cesar</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="dnk">
+                <span class="checkbox__label">DNK</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="emall">
+                <span class="checkbox__label">Emall</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="faiser">
+                <span class="checkbox__label">Faiser</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="greal" checked>
+                <span class="checkbox__label">Greal</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="holly-land" checked>
+                <span class="checkbox__label">Holly Land</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="market" checked>
+                <span class="checkbox__label">Market</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="hiplace">
+                <span class="checkbox__label">Hiplace</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="honey-moon">
+                <span class="checkbox__label">Honey Moon</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="realplace">
+                <span class="checkbox__label">Realplace</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="seller" id="reshop">
+                <span class="checkbox__label">Reshop</span>
+              </label>
+              <a class="filters-form__link" href="#">Скрыть</a>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Рейтинг</legend>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="rating" value="3">
+                <span class="radio-button__label">От
+                  <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 3 из 5">
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                  </span>
+                </span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="rating" value="4">
+                <span class="radio-button__label">От
+                  <span class="filters-form__rate rating rating--size-medium" aria-label="Рейтинг 4 из 5">
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star rating__star--active" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                    <svg class="rating__star" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path d="M7 11.252L11.326 14l-1.148-5.18L14 5.335l-5.033-.457L7 0 5.033 4.878 0 5.335 3.815 8.82 2.674 14 7 11.252z"/></svg>
+                  </span>
+                </span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="rating" id="rating-any" checked>
+                <span class="radio-button__label">Любой</span>
+              </label>
+              </fieldset>
+            <button class="filters-form__button button button--additional" type="button">Все фильтры</button>
+          </form>
+        </section>
+        <div class="products-section__navigation">
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--disabled" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg class="pagination__link-img" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg"><path d="M2.707 5.975l3.967-4.032A1.149 1.149 0 006.31.088a1.105 1.105 0 00-1.226.249L.33 5.167A1.14 1.14 0 000 5.974a1.155 1.155 0 00.331.808l4.752 4.887a1.119 1.119 0 001.591 0 1.149 1.149 0 000-1.606l-3.967-4.09z"/></svg>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">5</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">6</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">7</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">8</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                <span class="visually-hidden">Вперёд</span>
+                <svg class="pagination__link-img" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg"><path d="M4.293 5.975L.326 1.943A1.149 1.149 0 01.69.088a1.105 1.105 0 011.226.249l4.752 4.83A1.14 1.14 0 017 5.974a1.155 1.155 0 01-.331.808L1.917 11.67a1.119 1.119 0 01-1.591 0 1.149 1.149 0 010-1.606l3.967-4.09z" /></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products-short-list-section">
+        <h2 class="products-short-list-section__title">Вы недавно смотрели</h2>
+        <ul class="products-short-list-section__list catalog">
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)</a>
+              </h3>
+              <img class="product-preview__img" src="img/photo-10.png" width="280" height="300" alt="Смарт-часы Apple Watch Series 5 38mm (MTEY2RU/A)">
+              <p class="product-preview__price">34 000 ₽</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)</a>
+              </h3>
+              <img class="product-preview__img" src="img/photo-6.png" width="280" height="300" alt="Планшет Apple iPad Pro 11 (2020) 128 GB Space Grey (MY2V2RU/A)">
+              <p class="product-preview__price">72 000 ₽</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short product-preview--instalment" data-value="0-0-24">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD </a>
+              </h3>
+              <img class="product-preview__img" src="img/photo-2.png" width="280" height="300" alt="Ноутбук Apple MacBook Pro 16 TB i9 2.3/16GB/1024GB SSD ">
+              <p class="product-preview__price">239 000 ₽</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button image-button--active" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)</a>
+              </h3>
+              <img class="product-preview__img" src="img/photo-9.png" width="280" height="300" alt="Смарт-часы Apple Watch SE 40mm White (MYDM2RU/A)">
+              <p class="product-preview__price">25 000 ₽</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short">
+              <h3 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)</a>
+              </h3>
+              <img class="product-preview__img" src="img/photo-4.png" width="280" height="300" alt="Смартфон Samsung Galaxy S20 Ultra 12/128GB (SM-G988BZADSER)">
+              <p class="product-preview__price">95 000 ₽</p>
+              <div class="product-preview__controls">
+                <button class="product-preview__button button" type="button">В корзину</button>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в избранное</span>
+                  <svg class="image-button__img" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg"><path d="M18.535 2.415a5.014 5.014 0 00-1.622-1.047 5.155 5.155 0 00-3.828 0 5.014 5.014 0 00-1.622 1.047l-.963.93-.964-.93A5.093 5.093 0 006 1a5.093 5.093 0 00-3.535 1.415A4.745 4.745 0 001 5.828c0 1.28.527 2.509 1.465 3.414L10.5 17l8.035-7.758a4.82 4.82 0 001.084-1.566 4.682 4.682 0 000-3.695 4.819 4.819 0 00-1.084-1.566z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="product-preview__button image-button" href="#">
+                  <span class="visually-hidden">Добавить в сравнение</span>
+                  <svg class="image-button__img" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 19V8m5 11V4M6 19V1M1 19v-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page__footer page-footer">
+      <div class="page-footer__navigation service-navigation">
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">О компании</p>
+          <ul class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">О нас</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Контакты</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Вакансии</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Реквизиты</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Новости</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Покупателям</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Служба поддержки</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Возврат и обмен</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Рассрочка</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Акции</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Сотрудничество</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Продавайте на Market</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Перевозчикам</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Пункты выдачи</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Реферальная программа</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Постаматы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Правовая информация</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Условия использования сайта</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Политика обработки персональных данных</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Условия заказа и доставки</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__payment payment">
+        <p class="payment__category">Способы оплаты:</p>
+        <ul class="payment__list">
+          <li class="payment__item">
+            <img src="img/visa.svg" width="34" height="24" alt="visa">
+          </li>
+          <li class="payment__item">
+            <img src="img/mastercard.svg" width="34" height="24" alt="mastercard">
+          </li>
+          <li class="payment__item">
+            <img src="img/applepay.svg" width="34" height="24" alt="apple-pay">
+          </li>
+          <li class="payment__item">
+            <img src="img/googlepay.svg" width="34" height="24" alt="google-pay">
+          </li>
+          <li class="payment__item">
+            <img src="img/yandex.svg" width="34" height="24" alt="yandex">
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social social">
+        <p class="social__category">Мы в соцсетях</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/twitter.svg" width="30" height="30" alt="twitter">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/facebook.svg" width="30" height="30" alt="facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/vk.svg" width="30" height="30" alt="vk">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="img/instagram.svg" width="30" height="30" alt="instagram">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__copyright">OOO «Маркет» © 2021 Все права защищены</p>
+    </footer>
+  </body>
+</html>
